@@ -21,7 +21,21 @@ console.log(maxNumber(5,15,30))
 //III - identical dice
 //Write an algorithm which throws 3 dices and finds out the number of identical value, three, two or none.
 
+let firstDice= Math.floor(Math.random() * 6) + 1
+let secondDice= Math.floor(Math.random() * 6) + 1
+let thirdDice= Math.floor(Math.random() * 6) + 1
 
+function checkValuesOfDices(firstDice, secondDice, thirdDice){
+    if ( firstDice === secondDice === thirdDice){
+        return "All Three Identical"
+    }else if( firstDice == secondDice || secondDice == thirdDice || thirdDice == firstDice){
+        return "Two identical"
+    }else{
+        return "None Identical"
+    }
+}
+
+console.log(checkValuesOfDices())
 
 //IV - day’s number
 //Write an algorithm which given the number of a day returns its name.
