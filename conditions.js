@@ -58,14 +58,14 @@ console.log(nameOfDay(3))
 //A print shop charges 0.12 € the ten first copy, 0.11 € the next 20 and 0.10 € from there.
 //Write an algorithm which given a number of copies and calculates the price
 
-function printShopCopy(numberOfCopies){
-    if (numberOfCopies <= 10){
-        return "€"+ (numberOfCopies * 0.12) 
-    }else if ( numberOfCopies < 10 && numberOfCopies >= 30){
-        return "€"+(numberOfCopies * 0.11) 
+function printShopCopy(numberOfCopies) {
+    if (numberOfCopies <= 10) {
+        return "€" + (numberOfCopies * 0.12);
+    } else if (numberOfCopies <= 30) {
+        return "€" + (10 * 0.12 + (numberOfCopies - 10) * 0.11);
     } else {
-        return "€"+(numberOfCopies * 0.10)
+        return "€" + (10 * 0.12 + 20 * 0.11 + (numberOfCopies - 30) * 0.10);
     }
 }
 
-console.log(printShopCopy(6))
+console.log(printShopCopy(40))
