@@ -26,9 +26,9 @@ let secondDice= Math.floor(Math.random() * 6) + 1
 let thirdDice= Math.floor(Math.random() * 6) + 1
 
 function checkValuesOfDices(firstDice, secondDice, thirdDice){
-    if ( firstDice === secondDice === thirdDice){
+    if ( firstDice === secondDice && secondDice === thirdDice){
         return "All Three Identical"
-    }else if( firstDice == secondDice || secondDice == thirdDice || thirdDice == firstDice){
+    }else if( firstDice === secondDice || secondDice === thirdDice || thirdDice === firstDice){
         return "Two identical"
     }else{
         return "None Identical"
@@ -40,6 +40,21 @@ console.log(checkValuesOfDices())
 //IV - day’s number
 //Write an algorithm which given the number of a day returns its name.
 
+function nameOfDay (daysOfWeek){
+    let days  = ["Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday", "Sunday"]
+
+    if (daysOfWeek >= 1 && daysOfWeek <= 7){
+        return days[daysOfWeek-1]
+    }else{
+        return "Invalid number. There is no such day in a week"
+    }
+
+}
+
+console.log(nameOfDay(3))
+
+
 //V - print shop
 //A print shop charges 0.12 € the ten first copy, 0.11 € the next 20 and 0.10 € from there.
 //Write an algorithm which given a number of copies and calculates the price
+
