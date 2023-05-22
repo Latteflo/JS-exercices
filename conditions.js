@@ -61,7 +61,7 @@ console.log(nameOfDay(3))
 function printShopCopy(numberOfCopies) {
     if (numberOfCopies <= 10) {
         return "€" + (numberOfCopies * 0.12);
-    } else if (numberOfCopies <= 30) {
+    } else if (numberOfCopies <= 20) {
         return "€" + (10 * 0.12 + (numberOfCopies - 10) * 0.11);
     } else {
         return "€" + (10 * 0.12 + 20 * 0.11 + (numberOfCopies - 30) * 0.10);

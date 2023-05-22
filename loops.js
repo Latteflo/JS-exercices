@@ -3,12 +3,6 @@
 
 //the numbers from 1 to n
 
-//the numbers from 1 to n in descending order
-
-//the numbers from -n to n
-
-//the odd numbers from 1 to n
-
 function printNr(n) {
   for (i = 1; i <= n; i++) {
     console.log(i)
@@ -17,8 +11,25 @@ function printNr(n) {
 
 printNr(8)
 
+//the numbers from 1 to n in descending order
+
+function printNr(n) {
+    for (i = n; i >= 1; i--) {
+      console.log(i)
+    }
+  }
+  
+  printNr(8)
+
+//the numbers from -n to n
+
+//the odd numbers from 1 to n
+
+
 //II - print random number of integers
 //Write an algorithm which receives an random integer and prints from 0 to it.
+
+
 
 //III - throw dices
 //Write an algorithm which throws a dice a given number of time and count the number of time a certain number is received.
