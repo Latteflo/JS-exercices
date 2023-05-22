@@ -46,18 +46,18 @@ function printOddNumbers(n) {
 //II - print random number of integers
 //Write an algorithm which receives an random integer and prints from 0 to it.
 
-function numberOfIntegers(n) {
-    for (let i = 0; i <= n; i++) {
-      console.log(i)
-    }
+function numberOfIntegers() {
+  let sum = Math.floor(Math.random() * 10) + 1
+  for (let i = 0; i <= sum; i++) {
+    console.log(i)
   }
-  
-  numberOfIntegers(9)
-  
-
+}
+//numberOfIntegers()
 
 //III - throw dices
 //Write an algorithm which throws a dice a given number of time and count the number of time a certain number is received.
+
+
 
 //IV - even numbers
 //Write an algorithm which prints all the even numbers from 0 to a given number.
