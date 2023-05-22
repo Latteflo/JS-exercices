@@ -9,13 +9,13 @@
 
 //the odd numbers from 1 to n
 
+function printNr(n) {
+  for (i = 1; i <= n; i++) {
+    console.log(i)
+  }
+}
 
-
-
-
-
-
-
+printNr(8)
 
 //II - print random number of integers
 //Write an algorithm which receives an random integer and prints from 0 to it.
