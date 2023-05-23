@@ -49,3 +49,11 @@ console.log(swappedName);
 
 //V - whitespace
 //Write a function which receives a sentence full of whitespace and returns it without them.
+
+function trimWhitespaces(sentence){
+    let parts = sentence.split(' ');
+    return parts.join('');
+}
+
+console.log(trimWhitespaces("I need brains and coffee"))
+
