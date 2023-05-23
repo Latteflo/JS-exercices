@@ -8,6 +8,9 @@ console.log(everythingPrinted)
 //II - maximum
 //Write an algorithm which receives an array of integers and prints its maximum.
 
+let mixedNumbers=[3,5,9,7,5,4,10,6,1,8]
+
+console.log(Math.max(...mixedNumbers))
 
 //III - minimum
 //Write an algorithm which receives an array of integers and prints its minimum.
