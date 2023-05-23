@@ -57,10 +57,35 @@ function numberOfIntegers() {
 //III - throw dices
 //Write an algorithm which throws a dice a given number of time and count the number of time a certain number is received.
 
+function throwDice() {
+  let draw = []
+  for (let i = 0; i <= 6; i++) {
+    let result = Math.floor(Math.random() * 6) + 1
+    draw.push(result)
+  }
+  return draw
+}
 
+function check(array, value) {
+  let int = 0
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      int++;
+    }
+  }
+  return int
+}
+
+let tabOfDice = throwDice()
+let rec = check(tabOfDice, 2)
+
+//console.log(tabOfDice)
+//console.log(rec)
 
 //IV - even numbers
 //Write an algorithm which prints all the even numbers from 0 to a given number.
+
+
 
 //V - perfect number
 //Write an algorithm which verify if a given positive integer is a perfect number, meaning equal to the sum of his divisors (except himself).
