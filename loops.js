@@ -70,7 +70,7 @@ function check(array, value) {
   let int = 0
   for (let i = 0; i < array.length; i++) {
     if (array[i] === value) {
-      int++;
+      int++
     }
   }
   return int
@@ -85,7 +85,31 @@ let rec = check(tabOfDice, 2)
 //IV - even numbers
 //Write an algorithm which prints all the even numbers from 0 to a given number.
 
+function evenNumbers(n) {
+  for (let i = 0; i <= n; i++) {
+    if (i % 2 === 0) {
+      console.log(i)
+    }
+  }
+}
 
+//evenNumbers(6)
 
 //V - perfect number
 //Write an algorithm which verify if a given positive integer is a perfect number, meaning equal to the sum of his divisors (except himself).
+
+function perfectNumber(n) {
+  let temp = 0
+  for (let i = 1; i <= n / 2; i++) {
+    if (n % i === 0) {
+      temp += i
+    }
+  }
+  if (temp === n && temp !== 0) {
+    return "Yeeeeyyy!!! You found the perfect number!"
+  } else {
+    return "Buuhuuu, try again!!!"
+  }
+}
+
+console.log(perfectNumber(6))
